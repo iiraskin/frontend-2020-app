@@ -1,23 +1,84 @@
-.App {
-  text-align: center;
+body{
+    background-color: #55EEEE;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+#form > div{
+  width:500px;
+  margin:auto;
+  margin-top:10%;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#signup,#signin{
+  width:100%;
+  background:#55DD55;
+}
+#signup{
+  height:250px;
+}
+#signin{
+  height:200px;
+}
+.green{
+  background-color:#229922;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#buttons{
+  height:100px;
+  background:#55DD55;
+}
+#buttons > p {
+  width:49.95%;
+  float:left;
+  color:white;
+  text-align:center;
+  padding-top:25px;
+  height:75%;
+  margin:0;
+}
+#buttons > p:hover{
+  background:#44AA44;
+  color:#55DD55;
+  cursor:pointer;
+}
+#signup > input,#signin > input {
+  margin-top:20px;
+  margin-left:105px;
+  height:25px;
+  border: 2px inset #44AA44;
 }
 
-.App-link {
-  color: #61dafb;
+#signup > button{
+    margin-top:20px;
+    margin-left:125px;
+    background:#229922;
+    color:white;
+    width:150px;
+    height:25px;
+    border: 2px outset #44AA44;
+}
+
+
+#signin > #username,#signin > #password,#signin >button,
+#signup > #username,#signup > #password,#signup > #confirm
+{
+  width:250px;
+  margin-left:125px !important;
+  margin-top:20px;
+  height:25px;
+}
+
+#signin > button{
+    background:#229922;
+    color:white;
+    border: 2px outset #44AA44;
+}
+
+#error_message
+{
+    color:red;
+    margin-left:125px !important;
 }
